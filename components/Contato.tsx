@@ -136,7 +136,7 @@ export default function Contato() {
                   e.preventDefault()
                   const form = e.target as HTMLFormElement
                   const data = new FormData(form)
-                  fetch('/', {
+                  fetch('/__forms.html', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                     body: new URLSearchParams(data as unknown as Record<string, string>).toString(),
