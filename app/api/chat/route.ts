@@ -1,7 +1,7 @@
 import Groq from 'groq-sdk'
 import { NextRequest } from 'next/server'
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY })
+export const dynamic = 'force-dynamic'
 
 const SYSTEM_PROMPT = `Você é um consultor tributário sênior da Opera Soluções Contábeis,
 especialista em legislação tributária brasileira.
@@ -32,6 +32,14 @@ export async function POST(request: NextRequest) {
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
       return Response.json({ error: 'Mensagens inválidas' }, { status: 400 })
     }
+
+    const apiKey = process.env.GROQ_API_KEY
+    if (!apiKey) {
+      console.error('GROQ_API_KEY não configurada')
+      return Response.json({ error: 'Serviço temporariamente indisponível' }, { status: 500 })
+    }
+
+    const groq = new Groq({ apiKey })
 
     const completion = await groq.chat.completions.create({
       model: 'llama-3.3-70b-versatile',
