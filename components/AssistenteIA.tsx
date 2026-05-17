@@ -38,6 +38,7 @@ export default function AssistenteIA() {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    if (messages.length === 0 && !loading) return
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages, loading])
 
