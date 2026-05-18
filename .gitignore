@@ -27,5 +27,8 @@ yarn-error.log*
 # netlify
 .netlify
 
+# claude code worktrees (quebram o checkout do Netlify se commitados)
+.claude/worktrees/
+
 # arquivos do projeto
 *.pdf
