@@ -11,7 +11,7 @@ const indiretos = {
 
 const diretos = {
   title: 'Tributos Diretos',
-  items: ['IRPJ — Lucro Real e Presumido', 'CSLL', 'Contribuição Previdenciária'],
+  items: ['IRPJ — Lucro Real e Presumido', 'CSLL'],
   color: 'text-gold',
 }
 

@@ -19,7 +19,7 @@ const services = [
     badge: 'Recorrente',
     badgeColor: 'text-teal border-teal/40',
     dark: true,
-    desc: 'Assumimos integralmente a gestão tributária da sua empresa — desde o escrituração fiscal até o planejamento estratégico. Seu time foca no core business, a Opera cuida da inteligência fiscal.',
+    desc: 'Assumimos integralmente a gestão tributária da sua empresa — desde a escrituração fiscal até o planejamento estratégico. Seu time foca no core business, a Opera cuida da inteligência fiscal.',
     items: ['Escrituração fiscal mensal', 'Obrigações acessórias (SPED, PGDAS)', 'Planejamento tributário contínuo'],
   },
   {
@@ -44,7 +44,7 @@ export default function Servicos() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="servicos" ref={ref} className="bg-white py-28 lg:py-36">
+    <section id="servicos" ref={ref} className="bg-cream py-28 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -76,7 +76,7 @@ export default function Servicos() {
               className={`card-hover border p-8 flex flex-col ${
                 s.dark
                   ? 'bg-dark text-white border-teal/20'
-                  : 'bg-cream text-text-main border-black/5'
+                  : 'bg-white text-text-main border-black/5'
               }`}
             >
               <div className="flex items-start justify-between mb-8">

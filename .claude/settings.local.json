@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node \"C:\\\\Users\\\\mathe\\\\OneDrive\\\\Área de Trabalho\\\\site opera\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\load-context.mjs\")",
+      "Bash(npx next *)"
+    ]
+  }
+}

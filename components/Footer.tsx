@@ -11,7 +11,7 @@ const quickLinks = [
   { label: 'Contato', href: '#contato' },
 ]
 
-const tributos = ['ICMS', 'IPI', 'PIS/COFINS', 'IRPJ', 'CSLL', 'Contribuição Previdenciária']
+const tributos = ['ICMS', 'IPI', 'PIS', 'COFINS', 'IRPJ', 'CSLL']
 
 export default function Footer() {
   const scrollTo = (href: string) => {

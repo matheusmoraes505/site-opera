@@ -75,7 +75,7 @@ export default function QuemSomos() {
               initial={{ opacity: 0, x: -20 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.45 }}
-              className="mt-10 bg-dark text-white p-8 border-l-4 border-teal"
+              className="mt-10 bg-dark text-white p-8 border border-teal/25"
             >
               <p className="font-serif text-lg italic leading-relaxed">
                 "Vendemos impacto no EBITDA. Quando a Opera entrega, o cliente para de ouvir

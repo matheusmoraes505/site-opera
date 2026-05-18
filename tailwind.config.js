@@ -17,7 +17,7 @@ module.exports = {
       },
       fontFamily: {
         serif: ['Playfair Display', 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
       },
       letterSpacing: {
         widest: '0.2em',

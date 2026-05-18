@@ -40,7 +40,7 @@ export default function Metodologia() {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
 
   return (
-    <section id="metodologia" ref={sectionRef} className="bg-white py-28 lg:py-36">
+    <section id="metodologia" ref={sectionRef} className="bg-cream py-28 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -88,7 +88,7 @@ export default function Metodologia() {
                 >
                   {/* Content card */}
                   <div className={`md:w-[calc(50%-3rem)] ${isLeft ? 'md:text-right' : 'md:text-left'}`}>
-                    <div className="bg-cream p-8 border border-black/5 hover:border-teal/30 transition-colors duration-300">
+                    <div className="bg-white p-8 border border-black/5 hover:border-teal/30 transition-colors duration-300">
                       <p className="text-teal text-xs font-sans font-semibold uppercase tracking-widest mb-3">{e.num}</p>
                       <h3 className="font-serif text-2xl font-bold text-text-main mb-3">{e.title}</h3>
                       <p className="text-text-main/60 text-sm font-sans leading-relaxed">{e.desc}</p>
