@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/mathe/OneDrive/Área de Trabalho/site opera/**)",
+      "Bash(npx -y skills add pbakaus/impeccable --yes)",
+      "Bash(npx -y skills add https://github.com/kylezantos/design-motion-principles --skill design-motion-principles --yes)",
+      "PowerShell(ls \"$env:USERPROFILE\\\\.claude\\\\skills\" 2>$null)",
+      "PowerShell(claude --version)",
+      "Bash(git add *)"
+    ]
+  }
+}
